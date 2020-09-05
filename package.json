@@ -11,6 +11,7 @@
     "@material-ui/core": "^3.7.0",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^3.0.0-alpha.14",
+    "@naisutech/react-tree": "^0.4.2",
     "@sentry/browser": "^4.6.6",
     "axios": "^0.18.0",
     "chai": "^4.2.0",
@@ -52,8 +53,7 @@
     "request-promise": "^4.2.4",
     "slick-carousel": "^1.8.1",
     "source-map-explorer": "^1.6.0",
-    "typewriter-effect": "^2.10.0",
-    "@naisutech/react-tree": "^0.4.2"
+    "typewriter-effect": "^2.10.0"
   },
   "engines": {
     "node": "10.x"
