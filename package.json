@@ -55,6 +55,9 @@
     "typewriter-effect": "^2.10.0",
     "@naisutech/react-tree": "^0.4.2"
   },
+  "engines": {
+    "node": ">=8.13.1"
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --single-quote --write",
