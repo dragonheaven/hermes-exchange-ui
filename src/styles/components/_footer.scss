@@ -1,0 +1,60 @@
+/* =================================================================== */
+/* ------------------------------ Footer ----------------------------- */
+/* =================================================================== */
+
+.tz-footer {
+  padding: 0;
+  background-image: -webkit-linear-gradient(-4deg, #305da1 28%, #5d67bb 81%, #6499c9 100%);
+
+  .container {
+    padding: 2rem 0;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  &__bottom {
+    border-top: 1px solid var(--clr-primary);
+
+    &__logo {
+      width: 95px;
+      height: 40px;
+      fill: var(--clr-white);
+    }
+  }
+
+  &__auth {
+    background-color: var(--clr-primary-darker) !important;
+    color: var(--clr-primary-light) !important;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      fill: var(--clr-white);
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &__item {
+      &__link {
+        font-size: 1rem;
+        color: var(--clr-primary-lighter);
+
+        &:hover {
+          color: var(--clr-white);
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 1rem;
+
+    .container {
+      padding: 2rem 0;
+    }
+  }
+}

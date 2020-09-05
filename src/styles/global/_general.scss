@@ -1,0 +1,177 @@
+/* =================================================================== */
+/* ----------------------------- General ----------------------------- */
+/* =================================================================== */
+
+* {
+  outline: none !important;
+}
+
+body {
+  //font-family: Roboto, sans-serif;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--clr-white);
+  outline: none !important;
+}
+
+a:hover {
+  color: var(--clr-white);
+}
+
+// Perfect Scroll Bar
+.ps {
+  .ps__rail-x:hover,
+  .ps__rail-y:hover,
+  .ps__rail-x:focus,
+  .ps__rail-y:focus,
+  .ps__rail-x.ps--clicking,
+  .ps__rail-y.ps--clicking {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    display: block;
+    background-color: transparent;
+  }
+
+  .ps__rail-x:hover > .ps__thumb-x,
+  .ps__rail-x:focus > .ps__thumb-x,
+  .ps__rail-x.ps--clicking .ps__thumb-x {
+    height: 6px;
+  }
+
+  .ps__rail-y:hover > .ps__thumb-y,
+  .ps__rail-y:focus > .ps__thumb-y,
+  .ps__rail-y.ps--clicking .ps__thumb-y {
+    width: 6px;
+  }
+}
+
+//login
+.login-form {
+  .form-content {
+    .recaptcha-content {
+      margin-top: 20px;
+    }
+    .validation-tooltip {
+      display: none;
+      &.agreement_validation_message,
+      &.recaptcha_validation_message {
+        display: inherit;
+        p {
+          color: red;
+          font-size: 16px;
+          margin: 5px 0;
+        }
+      }
+    }
+    .form-link {
+      margin-left: 50px;
+    }
+  }
+}
+
+//general table
+.hermes-table {
+  width: 100%;
+  border-radius: 6px;
+
+  &__paper {
+    min-width: 650px;
+    box-shadow: unset !important;
+
+    table {
+      border: none;
+      margin-bottom: 0;
+
+      tr {
+        height: unset;
+      }
+
+      th {
+        padding: 4px 20px;
+        border-right: none;
+      }
+
+      td {
+        padding: 14px 10px !important;
+        border-right: none !important;
+      }
+
+      thead {
+        background-color: #001b57;
+        th {
+          color: white;
+          padding: 10px 20px;
+        }
+        th:first-child {
+          border-top-left-radius: 4px;
+        }
+        th:last-child {
+          border-top-right-radius: 4px;
+        }
+      }
+
+      tbody {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  &__pagination {
+    span {
+      font-size: 14px !important;
+    }
+    button {
+      padding: 0;
+    }
+  }
+}
+
+//Maintenance Page
+.maintenance-container {
+  .form-container {
+    width: 650px;
+  }
+  img {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .maintenance-info {
+    margin-top: 10px;
+    h2 {
+      font-size: 34px;
+      text-align: center;
+    }
+    .content {
+      font-size: 18px;
+      color: #fff;
+      p {
+        margin: 0;
+      }
+    }
+    a {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      button {
+        background-color: #4951fb;
+        width: 190px;
+        color: #fff;
+        padding: 10px 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hermes-table {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,73 @@
+$icons: (
+  sprite: (
+    width: 534px,
+    height: 406px,
+    svgPath: '../assets/sprite/sprite.svg'
+  ),
+  check: (
+    width: 24px,
+    height: 24px,
+    backgroundX: 0px,
+    backgroundY: 0px
+  ),
+  chevron-left: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -24px,
+    backgroundY: -24px
+  ),
+  chevron-right: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -48px,
+    backgroundY: -48px
+  ),
+  close: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -72px,
+    backgroundY: -72px
+  ),
+  expand-down: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -96px,
+    backgroundY: -96px
+  ),
+  expand-up: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -120px,
+    backgroundY: -120px
+  ),
+  global-presence: (
+    width: 48px,
+    height: 48px,
+    backgroundX: -144px,
+    backgroundY: -144px
+  ),
+  logo: (
+    width: 221.1px,
+    height: 93.54px,
+    backgroundX: -192px,
+    backgroundY: -192px
+  ),
+  menu: (
+    width: 24px,
+    height: 24px,
+    backgroundX: -414px,
+    backgroundY: -286px
+  ),
+  security: (
+    width: 48px,
+    height: 48px,
+    backgroundX: -438px,
+    backgroundY: -310px
+  ),
+  service: (
+    width: 48px,
+    height: 48px,
+    backgroundX: -486px,
+    backgroundY: -358px
+  )
+);

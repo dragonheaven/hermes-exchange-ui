@@ -1,0 +1,29 @@
+// Global
+@import 'global/variables';
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/transitions';
+//@import 'bootstrap/dropdown';
+@import 'global/mixin';
+@import 'global/utilities';
+@import 'global/animation';
+@import 'global/general';
+
+// Sprite
+@import 'sprite/sprite-svg';
+
+// Library
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~react-virtualized/styles.css';
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+// Components
+@import 'components/loader';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/modal';
+@import 'components/tradingview';
+@import 'components/roadmap';
+
+// Containers
+@import 'containers/exchange';

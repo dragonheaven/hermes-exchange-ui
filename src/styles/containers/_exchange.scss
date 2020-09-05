@@ -1,0 +1,216 @@
+/* =================================================================== */
+/* ----------------------------- Exchange ---------------------------- */
+/* =================================================================== */
+
+.tz-exchange {
+  width: 100%;
+  min-height: calc(100vh - 40px);
+  margin-top: 40px;
+  background-color: var(--clr-dark);
+  font-size: 0.875rem;
+  position: absolute;
+
+  .tree-view {
+    //overflow-y: auto;
+  }
+
+
+  &__inner {
+    background-color: var(--clr-primary-darker);
+    border-radius: 0.25rem;
+
+    &__header {
+      height: 33px;
+      background-color: var(--clr-primary-dark);
+      border-bottom: 1px solid var(--clr-primary);
+      border-radius: 0.25rem 0.25rem 0 0;
+      font-weight: 500;
+      line-height: 2rem;
+      color: var(--clr-primary-lighter);
+
+      &__tab {
+        height: 32px;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+
+        &.active {
+          border-color: var(--clr-white);
+          color: var(--clr-white);
+        }
+
+        &:hover {
+          color: var(--clr-white);
+        }
+      }
+    }
+  }
+
+  &__orderbook {
+    .ReactVirtualized__Table {
+      &__headerColumn,
+      &__rowColumn {
+        &:not(:first-child) {
+          text-align: right;
+        }
+      }
+    }
+
+    .sell {
+      color: var(--clr-sell);
+    }
+
+    .buy {
+      color: var(--clr-buy);
+    }
+  }
+
+  &__orderbook,
+  &__ordertable {
+    .ReactVirtualized__Grid {
+      overflow: hidden !important;
+    }
+
+    .ReactVirtualized__Table {
+      &__headerColumn {
+        font-weight: normal;
+        color: var(--clr-primary-light);
+        text-transform: none;
+      }
+
+      &__rowColumn {
+        font-size: 0.75rem;
+        color: var(--clr-primary-lighter);
+      }
+
+      &__headerColumn,
+      &__rowColumn {
+        //&:not(:first-child) {
+        //  text-align: right;
+        //}
+
+        &:first-child {
+          margin-left: 1rem;
+        }
+
+        &:last-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__spread {
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid var(--clr-primary);
+    border-bottom: 1px solid var(--clr-primary);
+
+    &__amount {
+      font-size: 1.25rem;
+      color: var(--clr-sell);
+    }
+
+    &__delimiter,
+    &__value {
+      font-size: 0.875rem;
+      color: var(--clr-primary-light);
+    }
+  }
+
+  &__no-orders {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    right: 0;
+    bottom: 0;
+
+    &__icon {
+      width: 40px;
+      fill: var(--clr-primary-light);
+
+      .cls-1 {
+        opacity: 0.3;
+      }
+    }
+
+    .text-small {
+      font-size: 0.75rem;
+      line-height: 1;
+      color: var(--clr-primary-light);
+    }
+  }
+
+  &__trade {
+    &__buy,
+    &__sell {
+      color: var(--clr-white) !important;
+      text-transform: none !important;
+    }
+
+    &__buy {
+      background-color: var(--clr-buy) !important;
+    }
+
+    &__sell {
+      background-color: var(--clr-sell) !important;
+    }
+
+    &__input {
+      label,
+      input {
+        color: var(--clr-primary-light) !important;
+      }
+
+      fieldset {
+        border-color: var(--clr-primary) !important;
+      }
+    }
+
+    &__percent {
+      border: 1px solid var(--clr-primary-light);
+      border-radius: 0.25rem;
+      color: var(--clr-primary-light);
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--clr-white);
+        color: var(--clr-white);
+      }
+
+      &.active {
+        background-color: var(--clr-primary);
+        color: var(--clr-white);
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b4b4b;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5F5F5F;
+  border-radius: 10px;
+  border: 1px solid #4b4b4b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #747474;
+}

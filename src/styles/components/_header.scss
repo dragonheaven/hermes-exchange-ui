@@ -1,0 +1,82 @@
+/* =================================================================== */
+/* ------------------------------ Header ----------------------------- */
+/* =================================================================== */
+
+.tz-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8888;
+  height: 40px;
+  padding: 1rem 3rem;
+  background-color: var(--clr-primary-darker);
+
+  &__logo {
+    height: 40px;
+    display: inherit;
+    fill: var(--clr-white);
+
+    &__icon {
+      width: 95px;
+      height: 40px;
+      fill: white;
+    }
+
+    &__icon-big {
+      width: 500px;
+      height: 220px;
+      fill: white;
+    }
+
+    &:hover {
+      fill: var(--clr-primary-light);
+    }
+  }
+
+  &__link {
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: 500;
+
+    &:active,
+    &.active,
+    &:hover {
+      color: var(--clr-white);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0.5rem 1rem;
+
+    &__content {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      right: 0;
+      z-index: 8888;
+      max-height: 0;
+      display: block !important;
+      background-color: var(--clr-primary-darker);
+      overflow: hidden;
+      text-align: center;
+      transition: max-height 300ms;
+    }
+
+    .active + &__content {
+      max-height: 300px;
+    }
+
+    &__logo {
+      &__icon-big {
+        width: 80%;
+        height: 100px;
+        fill: white;
+      }
+    }
+  }
+}

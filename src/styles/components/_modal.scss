@@ -1,0 +1,80 @@
+/* =================================================================== */
+/* ------------------------------- Modal ----------------------------- */
+/* =================================================================== */
+
+.tz-dialog {
+  a {
+    color: var(--clr-primary) !important;
+  }
+}
+
+.tz-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &__auth {
+    position: relative;
+    max-width: 450px;
+
+    h2 {
+      line-height: 1.2;
+    }
+
+    &__close {
+      position: absolute !important;
+      top: 0.5rem;
+      right: 0.5rem;
+
+      &__icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        fill: var(--clr-primary);
+      }
+    }
+
+    &__remember {
+      margin: 0 0 0 -1rem !important;
+
+      > span {
+        &:first-child {
+          padding-right: 0;
+        }
+
+        &:last-child {
+          font-weight: normal;
+        }
+      }
+    }
+
+    &__forgot {
+      font-size: 0.875rem;
+
+      &:hover {
+        color: var(--clr-primary);
+        cursor: pointer;
+      }
+    }
+
+    &__qr {
+    }
+  }
+}
+
+/* Customize Sweetalert */
+
+.sweet-alert {
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
