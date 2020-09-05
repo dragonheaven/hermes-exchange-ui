@@ -11,11 +11,11 @@ import * as Sentry from '@sentry/browser';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import socketMiddleware from './redux/middlewares/socket';
+// import socketMiddleware from './redux/middlewares/socket';
 
 const store = configureStore();
 
-socketMiddleware.setupStore(store);
+// socketMiddleware.setupStore(store);
 
 const RELEASE = '0.1.0';
 // if (process.env.NODE_ENV === 'production') {
@@ -24,8 +24,8 @@ Sentry.init({
   release: RELEASE
 });
 // }
-socketMiddleware.setupSocket();
-socketMiddleware.connect('reconnect', {});
+// socketMiddleware.setupSocket();
+// socketMiddleware.connect('reconnect', {});
 
 ReactDOM.render(
   <Provider store={store}>
@@ -41,10 +41,10 @@ ReactDOM.render(
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-window.onbeforeunload = () => {
-  // store.dispatch({
-  //   type: types.BEFORE_PAGE_REFRESH,
-  //   payload: { }
-  // });
-  socketMiddleware.unloadEvent();
-};
+// window.onbeforeunload = () => {
+//   // store.dispatch({
+//   //   type: types.BEFORE_PAGE_REFRESH,
+//   //   payload: { }
+//   // });
+//   socketMiddleware.unloadEvent();
+// };

@@ -6,7 +6,7 @@ import withRoot from './withRoot';
 import Routes from '../../Routes';
 import Header from '../../components/Header';
 import PreLoader from '../../components/PreLoader';
-import ErrorBoundary from '../../ErrorBoundary';
+// import ErrorBoundary from '../../ErrorBoundary';
 import '../../styles/app.scss';
 
 class App extends Component {
@@ -22,14 +22,14 @@ class App extends Component {
 
   render() {
     return (
-      <ErrorBoundary>
+      <>
         <PreLoader />
 
         <Header />
 
         <Routes />
 
-      </ErrorBoundary>
+      </>
     );
   }
 }
