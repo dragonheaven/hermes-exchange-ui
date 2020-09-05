@@ -56,7 +56,7 @@
     "@naisutech/react-tree": "^0.4.2"
   },
   "engines": {
-    "node": "8.13.0"
+    "node": "10.x"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
