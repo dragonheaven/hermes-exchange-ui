@@ -852,19 +852,19 @@ export const treeData = [
     id: 'tree',
     parentId: null,
     label: 'All Instruments',
-    items: null,
+    items: null
   },
   {
     id: 'tree_0',
     parentId: 'tree',
     label: 'DERIBIT',
-    items: null,
+    items: null
   },
   {
     id: 'tree_1',
-    label: 'KRAKEN111',
+    label: 'KRAKEN',
     parentId: 'tree',
-    items: null,
+    items: null
   },
   {
     id: 'tree_0_0',
@@ -873,106 +873,119 @@ export const treeData = [
     items: [
       {
         id: 'tree_0_0_0',
-        label: 'ETH-1212',
-        parentId: 'tree_0_0',
+        label: 'ETH-25DEC20 [ETH/USD]',
+        parentId: 'tree_0_0'
       },
       {
         id: 'tree_0_0_1',
-        label: 'ETH-1212',
-        parentId: 'tree_0_0',
+        label: 'ETH-25SEP20 [ETH/USD]',
+        parentId: 'tree_0_0'
       },
       {
         id: 'tree_0_0_2',
-        label: 'ETH-1212',
-        parentId: 'tree_0_0',
+        label: 'ETH-26JUN20 [ETH/USD]',
+        parentId: 'tree_0_0'
       },
       {
         id: 'tree_0_0_3',
-        label: 'ETH-1212',
-        parentId: 'tree_0_0',
+        label: 'ETH-PERPETUAL [ETH/USD]',
+        parentId: 'tree_0_0'
       },
+      {
+        id: 'tree_0_0_4',
+        label: 'BTC-25SEP20 [BTC/USD]',
+        parentId: 'tree_0_0'
+      },
+      {
+        id: 'tree_0_0_5',
+        label: 'BTC-25DEC20 [BTC/USD]',
+        parentId: 'tree_0_0'
+      },
+      {
+        id: 'tree_0_0_6',
+        label: 'BTC-26JUN20 [BTC/USD]',
+        parentId: 'tree_0_0'
+      },
+      {
+        id: 'tree_0_0_7',
+        label: 'BTC-PERPETUAL [BTC/USD]',
+        parentId: 'tree_0_0'
+      }
     ]
   },
   {
     id: 'tree_0_1',
     label: 'Options',
     parentId: 'tree_0',
-    items: [
-      {
-        id: 'tree_0_1_0',
-        parentId: 'tree_0_1',
-        label: 'ETH-1212',
-      },
-      {
-        id: 'tree_0_1_1',
-        label: 'ETH-1212',
-        parentId: 'tree_0_1',
-      },
-      {
-        id: 'tree_0_1_2',
-        label: 'ETH-1212',
-        parentId: 'tree_0_1',
-      },
-      {
-        id: 'tree_0_1_3',
-        label: 'ETH-1212',
-        parentId: 'tree_0_1',
-      },
-    ]
+    items: []
   },
   {
     id: 'tree_1_0',
     label: 'Instruments',
     parentId: 'tree_1',
-    items: [
-      {
-        id: 'tree_1_0_0',
-        label: 'ETH-1212',
-        parentId: 'tree_1_0',
-      },
-      {
-        id: 'tree_1_0_1',
-        label: 'ETH-1212',
-        parentId: 'tree_1_0',
-      },
-      {
-        id: 'tree_1_0_2',
-        label: 'ETH-1212',
-        parentId: 'tree_1_0',
-      },
-      {
-        id: 'tree_1_0_3',
-        label: 'ETH-1212',
-        parentId: 'tree_1_0',
-      },
-    ]
+    items: []
   },
   {
     id: 'tree_1_1',
-    label: 'Features',
+    label: 'Futures',
     parentId: 'tree_1',
     items: [
       {
         id: 'tree_1_1_0',
-        label: 'ETH-1212',
-        parentId: 'tree_1_1',
+        label: 'XXBTZCAD.d [BTC/CAD]',
+        parentId: 'tree_1_1'
       },
       {
         id: 'tree_1_1_1',
-        label: 'ETH-1212',
-        parentId: 'tree_1_1',
+        label: 'XETHZGBP.d [ETH/GBP]',
+        parentId: 'tree_1_1'
       },
       {
         id: 'tree_1_1_2',
-        label: 'ETH-1212',
-        parentId: 'tree_1_1',
+        label: 'XXBTZEUR.d [BTC/EUR]',
+        parentId: 'tree_1_1'
       },
       {
         id: 'tree_1_1_3',
-        label: 'ETH-1212',
-        parentId: 'tree_1_1',
+        label: 'XXBTZUSD.d [BTC/USD]',
+        parentId: 'tree_1_1'
       },
-    ],
+      {
+        id: 'tree_1_1_4',
+        label: 'XETHXXBT.d [ETH/BTC]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_5',
+        label: 'XETHZJPY.d [ETH/JPY]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_6',
+        label: 'XETHZEUR.d [ETH/EUR]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_7',
+        label: 'XETHZUSD.d [ETH/USD]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_8',
+        label: 'XXBTZGBP.d [BTC/GBP]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_9',
+        label: 'XETHZCAD.d [ETH/CAD]',
+        parentId: 'tree_1_1'
+      },
+      {
+        id: 'tree_1_1_10',
+        label: 'XXBTZJPY.d [BTC/JPY]',
+        parentId: 'tree_1_1'
+      }
+    ]
   }
 ];
 

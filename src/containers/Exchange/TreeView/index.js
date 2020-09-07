@@ -1,11 +1,10 @@
 import React from 'react';
-import Tree from "@naisutech/react-tree";
-import {treeData} from "../../../constant/mockData";
-import {AutoSizer} from "react-virtualized";
-import PerfectScrollbar from "react-perfect-scrollbar";
+import Tree from '@naisutech/react-tree';
+import { treeData } from '../../../constant/mockData';
+import { AutoSizer } from 'react-virtualized';
+import PerfectScrollbar from 'react-perfect-scrollbar';
 
-function TreeView () {
-
+function TreeView() {
   return (
     <div className="tz-exchange__inner flex-1 d-flex flex-column">
       <div className="tree-view flex-1">
@@ -23,11 +22,14 @@ function TreeView () {
                   nodes={treeData}
                   onSelect={() => {}}
                   theme={'my-theme'}
+                  iconSet={{
+                    file: <></>
+                  }}
                   customTheme={{
                     'my-theme': {
                       text: '#fff',
-                      bg: '#252f69',
-                      highlight: '#353f79',
+                      bg: '#171717',
+                      highlight: '#272727',
                       decal: '#fff'
                     }
                   }}

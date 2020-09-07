@@ -5,7 +5,7 @@ export const TV_CONFIG = {
   height: '100%',
   theme: 'black',
   debug: false,
-  toolbar_bg: '#32408f',
+  toolbar_bg: '#363636',
   custom_css_url: 'css/trading_view_override.css',
   chartsStorageUrl: 'https://saveload.tradingview.com',
   chartsStorageApiVersion: '1.1',
@@ -42,13 +42,13 @@ export const TV_CONFIG = {
   overrides: {
     'mainSeriesProperties.style': 2,
 
-    'paneProperties.background': '#252f69',
-    'paneProperties.vertGridProperties.color': '#3f51b5',
-    'paneProperties.horzGridProperties.color': '#3f51b5',
+    'paneProperties.background': '#171717',
+    'paneProperties.vertGridProperties.color': '#272727',
+    'paneProperties.horzGridProperties.color': '#272727',
     'paneProperties.crossHairProperties.color': '#ffffff',
     'paneProperties.topMargin': 5,
     'paneProperties.bottomMargin': 5,
-    'paneProperties.gridProperties.color': '#3f51b5',
+    'paneProperties.gridProperties.color': '#272727',
 
     // Candles styles
     'mainSeriesProperties.candleStyle.upColor': '#08620a',

@@ -66,6 +66,7 @@ class Header extends Component {
         <div className="px-4">
           <div className="row">
             <div className="col-xl-12">
+              <div className="logotype">{/*<img src={'/logo.png'} width='100' alt='logo'/>*/}</div>
               <div className="d-flex justify-flex-end">
                 <span className="menu-button float-right" onClick={() => this.toggleMenu()}>
                   <span />
@@ -83,23 +84,13 @@ class Header extends Component {
   render() {
     const headerClass = 'site_header site_header_internal';
 
-    return (
-      <header className={headerClass}>
-        {this.renderInternalHeader()}
-      </header>
-    );
+    return <header className={headerClass}>{this.renderInternalHeader()}</header>;
   }
 }
 
-const mapStateToProps = () => ({
-});
+const mapStateToProps = () => ({});
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-    },
-    dispatch
-  );
+const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
 export default connect(
   mapStateToProps,

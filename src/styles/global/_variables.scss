@@ -6,9 +6,14 @@
 :root {
   --clr-primary: #3f51b5;
   --clr-primary-light: #606fc7;
+
   --clr-primary-lighter: #8591d5;
-  --clr-primary-dark: #32408f;
-  --clr-primary-darker: #252f69;
+
+  //--clr-primary-dark: #32408f;
+  --clr-primary-dark: #363636;
+
+  //--clr-primary-darker: #252f69;
+  --clr-primary-darker: #171717;
 
   --clr-secondary: #f50057;
   --clr-secondary-light: #ff4081;
@@ -20,12 +25,14 @@
   --clr-gray: #9e9e9e;
   --clr-blue-gray: #e0e8f3;
   --clr-white: #fff;
-  --clr-dark: #171c2b;
+  //--clr-dark: #171c2b;
+  --clr-dark: #767676;
 
   --clr-main: #4e86b1;
 
   --clr-second: #0db2e7;
-  --clr-blue-dark: #001b57;
+  //--clr-blue-dark: #001b57;
+  --clr-blue-dark: #363636;
 }
 
 .dark-theme {
