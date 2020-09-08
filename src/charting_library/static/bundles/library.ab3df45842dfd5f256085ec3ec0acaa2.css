@@ -10885,12 +10885,12 @@ html.theme-dark .ui-state-default a:visited {
 .ui-widget-header .ui-state-highlight {
   border: 1px solid #fde763;
   background: #fff8cf;
-  color: #363636;
+  color: #202125;
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-  color: #363636;
+  color: #202125;
 }
 .ui-state-error,
 .ui-widget-content .ui-state-error,

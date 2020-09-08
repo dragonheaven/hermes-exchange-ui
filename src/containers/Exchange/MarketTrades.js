@@ -15,6 +15,8 @@ class MarketTrades extends Component {
   };
 
   render() {
+    const whiteStyle = { color: 'white' };
+
     return (
       <div className="tz-exchange__inner flex-1 d-flex flex-column ml-1">
         <div className="tz-exchange__inner__header px-3">Market trades</div>
@@ -55,6 +57,7 @@ class MarketTrades extends Component {
                       headerRenderer={headerRenderer}
                       cellRenderer={normalCellRenderer('amount')}
                       width={width * 0.3}
+                      style={whiteStyle}
                     />
 
                     <Column
@@ -62,6 +65,7 @@ class MarketTrades extends Component {
                       headerRenderer={headerRenderer}
                       cellRenderer={normalCellRenderer('time')}
                       width={width * 0.3}
+                      style={whiteStyle}
                     />
                   </Table>
                 </PerfectScrollbar>

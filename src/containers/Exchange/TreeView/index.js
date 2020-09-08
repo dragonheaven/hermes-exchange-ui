@@ -1,8 +1,9 @@
 import React from 'react';
 import Tree from '@naisutech/react-tree';
-import { treeData } from '../../../constant/mockData';
 import { AutoSizer } from 'react-virtualized';
 import PerfectScrollbar from 'react-perfect-scrollbar';
+
+import { treeData } from '../../../constant/mockData';
 
 function TreeView() {
   return (
@@ -28,7 +29,7 @@ function TreeView() {
                   customTheme={{
                     'my-theme': {
                       text: '#fff',
-                      bg: '#171717',
+                      bg: '#18191B',
                       highlight: '#272727',
                       decal: '#fff'
                     }

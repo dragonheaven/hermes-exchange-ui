@@ -278,7 +278,50 @@ ul {
 }
 
 .site_header_internal {
-  background-color: #464646;
+  background-color: #323337;
+
+  .blue-group {
+    height: 40px;
+    font-size: 14px;
+    color: #81a1dc;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .instrument-desc {
+    font-weight: 600;
+    font-size: 16px;
+
+    .instrument-key {
+      color: #808185;
+      text-shadow: 0 0 3px #000000;
+    }
+
+    .instrument-value {
+      text-shadow: 1px 2px 4px #000000;
+    }
+  }
+
+  .balance {
+    font-size: 12px;
+    font-weight: 600;
+
+    .balance-key {
+      color: #808185;
+      text-shadow: 0 0 3px #000000;
+      text-transform: uppercase;
+    }
+    .balance-val {
+      color: white;
+      text-shadow: 0 0 3px #000000;
+      margin: 0 3px;
+    }
+    .desc {
+      font-size: 14px;
+    }
+  }
 }
 
 .delay-01s {
@@ -1896,7 +1939,8 @@ header {
 }
 
 header nav {
-  padding: 1.25rem 0;
+  //padding: 1.25rem 0;
+  height: 40px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

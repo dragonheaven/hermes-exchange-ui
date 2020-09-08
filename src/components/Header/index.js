@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { withStyles } from '@material-ui/core/styles';
 import deepPurple from '@material-ui/core/colors/deepPurple';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 
 const $ = window.$;
 
@@ -26,11 +28,6 @@ class Header extends Component {
   };
 
   componentDidMount() {
-    // const { isAuthenticated, path } = this.props;
-    // if (!isAuthenticated && path !== '/') {
-    //   this.props.redirectToHome();
-    // }
-
     window.onscroll = this.onScroll;
   }
 
@@ -63,17 +60,54 @@ class Header extends Component {
   renderInternalHeader = () => {
     return (
       <nav>
-        <div className="px-4">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="logotype">{/*<img src={'/logo.png'} width='100' alt='logo'/>*/}</div>
-              <div className="d-flex justify-flex-end">
-                <span className="menu-button float-right" onClick={() => this.toggleMenu()}>
-                  <span />
-                  <span />
-                  <span />
-                </span>
+        <div className="px-2">
+          <div className="d-flex">
+            <div className="blue-group d-flex align-items-center pl-3 mr-4">
+              <span className="mr-2">BTC / PAX</span>
+              <FontAwesomeIcon icon={faAngleDown} size={'lg'} />
+            </div>
+
+            <div className="instrument-desc d-flex align-items-center">
+              <span className="instrument-key mr-2">PAX</span>
+              <span className="instrument-value text-white">10,034.94</span>
+            </div>
+
+            <div className="d-flex flex-1 justify-content-center">
+              <div className="balance d-flex flex-column mr-4">
+                <span className="balance-key">Your Balance:</span>
+                <div className="desc">
+                  <span className="balance-key">
+                    BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span>
+                  </span>
+                </div>
               </div>
+
+              <div className="balance d-flex flex-column mr-4">
+                <span className="balance-key">Availability:</span>
+                <div className="desc">
+                  <span className="balance-key">
+                    BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span>
+                  </span>
+                </div>
+              </div>
+
+              <div className="balance d-flex flex-column mr-2">
+                <span className="balance-key">Value:</span>
+                <div className="desc">
+                  <span className="balance-key">
+                    PAX<span className="balance-val">21,205.03</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="blue-group d-flex align-items-center pl-3 mr-4">
+              <span className="mr-2">SK4 INVESTMENT GROUP LIMITED LIABILITY</span>
+              <FontAwesomeIcon icon={faAngleDown} size={'lg'} />
+            </div>
+
+            <div className="blue-group d-flex align-items-center">
+              <FontAwesomeIcon icon={faEllipsisV} size={'lg'} />
             </div>
           </div>
         </div>

@@ -27,10 +27,13 @@ class SeparateBook extends Component {
   render() {
     const { type } = this.props;
 
+    const whiteStyle = { color: 'white' };
+
     return (
       <AutoSizer>
         {({ width, height }) => {
-          const rowCount = parseInt(height / 24);
+          const rowCount = Math.floor(parseInt(height / 24));
+
           return (
             <Table
               width={width}
@@ -40,7 +43,7 @@ class SeparateBook extends Component {
               overscanRowCount={1}
               rowGetter={({ index }) => this.state.data[index]}
               rowHeight={24}
-              rowCount={rowCount}
+              rowCount={type === 'buy' ? rowCount : rowCount - 1}
               className="tz-exchange__orderbook"
               headerClassName="tz-exchange__orderbook__header"
             >
@@ -56,6 +59,7 @@ class SeparateBook extends Component {
                 headerRenderer={headerRenderer}
                 cellRenderer={normalCellRenderer('amount')}
                 width={width * 0.3}
+                style={whiteStyle}
               />
 
               <Column
@@ -63,6 +67,7 @@ class SeparateBook extends Component {
                 headerRenderer={headerRenderer}
                 cellRenderer={normalCellRenderer('sum')}
                 width={width * 0.3}
+                style={whiteStyle}
               />
             </Table>
           );
