@@ -11,7 +11,8 @@
   position: absolute;
 
   .tree-view {
-    //overflow-y: auto;
+    overflow-y: auto;
+    height: calc(100vh - 50px);
 
     .kWDqFL,
     .hHuvTu {
@@ -19,6 +20,29 @@
     }
     .sc-AxheI {
       margin-right: 20px;
+    }
+
+    background-color: #18191b;
+    padding: 0.5rem;
+    color: white;
+
+    .tree-view-item {
+    }
+
+    .node-text {
+      cursor: pointer;
+      font-size: 0.875rem;
+      padding: 8px 15px 8px 4px;
+      border-bottom: 1px solid #272727;
+
+      &:hover {
+        background-color: #272727;
+      }
+
+      .icon_wrapper {
+        min-width: 20px;
+        max-width: 20px;
+      }
     }
   }
 

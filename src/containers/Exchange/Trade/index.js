@@ -16,7 +16,7 @@ class Trade extends Component {
     const { isAuthenticated } = this.props;
 
     return (
-      <div className="tz-exchange__inner flex-1 mt-1">
+      <div className="tz-exchange__inner d-flex flex-column flex-1">
         <div className="tz-exchange__inner__header px-3">
           <span
             className={`tz-exchange__inner__header__tab${tab === 'limit' ? ' active' : ''}`}
@@ -33,9 +33,8 @@ class Trade extends Component {
           </span>
         </div>
 
-        <div className="flex-1 d-flex">
+        <div className="flex-1 d-flex flex-column">
           <BuySell type="Buy" isAuthenticated={isAuthenticated} />
-
           <BuySell type="Sell" isAuthenticated={isAuthenticated} />
         </div>
       </div>

@@ -18,7 +18,7 @@ class BuySell extends Component {
     const { isAuthenticated, type } = this.props;
 
     return (
-      <div className="flex-1 p-3">
+      <div className="p-3">
         <TextField
           fullWidth
           variant="outlined"

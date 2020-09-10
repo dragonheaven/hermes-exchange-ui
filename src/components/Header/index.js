@@ -32,15 +32,15 @@ class Header extends Component {
   }
 
   onScroll = e => {
-    if ($(e.target).scrollTop() > 0) {
-      this.setState({
-        scrollTop: false
-      });
-    } else {
-      this.setState({
-        scrollTop: true
-      });
-    }
+    // if ($(e.target).scrollTop() > 0) {
+    //   this.setState({
+    //     scrollTop: false
+    //   });
+    // } else {
+    //   this.setState({
+    //     scrollTop: true
+    //   });
+    // }
   };
 
   toggleMenu = () => {
@@ -61,55 +61,49 @@ class Header extends Component {
     return (
       <nav>
         <div className="px-2">
-          <div className="d-flex">
-            <div className="blue-group d-flex align-items-center pl-3 mr-4">
-              <span className="mr-2">BTC / PAX</span>
-              <FontAwesomeIcon icon={faAngleDown} size={'lg'} />
-            </div>
+          {/*<div className="d-flex">*/}
+          {/*  <div className="blue-group d-flex align-items-center pl-3 mr-4">*/}
+          {/*    <span className="mr-2">BTC / PAX</span>*/}
+          {/*    <FontAwesomeIcon icon={faAngleDown} size={'lg'} />*/}
+          {/*  </div>*/}
 
-            <div className="instrument-desc d-flex align-items-center">
-              <span className="instrument-key mr-2">PAX</span>
-              <span className="instrument-value text-white">10,034.94</span>
-            </div>
+          {/*  <div className="instrument-desc d-flex align-items-center">*/}
+          {/*    <span className="instrument-key mr-2">PAX</span>*/}
+          {/*    <span className="instrument-value text-white">10,034.94</span>*/}
+          {/*  </div>*/}
 
-            <div className="d-flex flex-1 justify-content-center">
-              <div className="balance d-flex flex-column mr-4">
-                <span className="balance-key">Your Balance:</span>
-                <div className="desc">
-                  <span className="balance-key">
-                    BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span>
-                  </span>
-                </div>
-              </div>
+          {/*  <div className="d-flex flex-1 justify-content-center">*/}
+          {/*    <div className="balance d-flex flex-column mr-4">*/}
+          {/*      <span className="balance-key">Your Balance:</span>*/}
+          {/*      <div className="desc">*/}
+          {/*        <span className="balance-key">BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span></span>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
 
-              <div className="balance d-flex flex-column mr-4">
-                <span className="balance-key">Availability:</span>
-                <div className="desc">
-                  <span className="balance-key">
-                    BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span>
-                  </span>
-                </div>
-              </div>
+          {/*    <div className="balance d-flex flex-column mr-4">*/}
+          {/*      <span className="balance-key">Availability:</span>*/}
+          {/*      <div className="desc">*/}
+          {/*        <span className="balance-key">BTC<span className="balance-val">0.81285394</span>/PAX<span className="balance-val">4,031.96</span></span>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
 
-              <div className="balance d-flex flex-column mr-2">
-                <span className="balance-key">Value:</span>
-                <div className="desc">
-                  <span className="balance-key">
-                    PAX<span className="balance-val">21,205.03</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+          {/*    <div className="balance d-flex flex-column mr-2">*/}
+          {/*      <span className="balance-key">Value:</span>*/}
+          {/*      <div className="desc">*/}
+          {/*        <span className="balance-key">PAX<span className="balance-val">21,205.03</span></span>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
 
-            <div className="blue-group d-flex align-items-center pl-3 mr-4">
-              <span className="mr-2">SK4 INVESTMENT GROUP LIMITED LIABILITY</span>
-              <FontAwesomeIcon icon={faAngleDown} size={'lg'} />
-            </div>
+          {/*  <div className="blue-group d-flex align-items-center pl-3 mr-4">*/}
+          {/*    <span className="mr-2">SK4 INVESTMENT GROUP LIMITED LIABILITY</span>*/}
+          {/*    <FontAwesomeIcon icon={faAngleDown} size={'lg'} />*/}
+          {/*  </div>*/}
 
-            <div className="blue-group d-flex align-items-center">
-              <FontAwesomeIcon icon={faEllipsisV} size={'lg'} />
-            </div>
-          </div>
+          {/*  <div className="blue-group d-flex align-items-center">*/}
+          {/*    <FontAwesomeIcon icon={faEllipsisV} size={'lg'} />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </nav>
     );

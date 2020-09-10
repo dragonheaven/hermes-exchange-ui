@@ -1,44 +1,30 @@
-import React from 'react';
-import Tree from '@naisutech/react-tree';
-import { AutoSizer } from 'react-virtualized';
-import PerfectScrollbar from 'react-perfect-scrollbar';
-
+import React, { useState } from 'react';
+import TreeViewItem from './TreeViewItem';
+import { ArrowDropDown, ArrowRight } from '@material-ui/icons';
 import { treeData } from '../../../constant/mockData';
 
 function TreeView() {
+  const [open, setOpen] = useState(true);
+  const { childs, label } = treeData;
+
+  console.log('childs:', childs);
   return (
     <div className="tz-exchange__inner flex-1 d-flex flex-column">
-      <div className="tree-view flex-1">
-        <AutoSizer>
-          {({ width, height }) => {
-            return (
-              <PerfectScrollbar
-                option={{
-                  suppressScrollX: true,
-                  minScrollbarLength: 30
-                }}
-                style={{ width: width, height: height }}
-              >
-                <Tree
-                  nodes={treeData}
-                  onSelect={() => {}}
-                  theme={'my-theme'}
-                  iconSet={{
-                    file: <></>
-                  }}
-                  customTheme={{
-                    'my-theme': {
-                      text: '#fff',
-                      bg: '#18191B',
-                      highlight: '#272727',
-                      decal: '#fff'
-                    }
-                  }}
-                />
-              </PerfectScrollbar>
-            );
-          }}
-        </AutoSizer>
+      <div className="tree-view">
+        <div className="d-flex align-items-center node-text" onClick={() => setOpen(!open)}>
+          <div className="icon_wrapper mr-1">
+            {childs && childs.length ? open ? <ArrowDropDown size={12} /> : <ArrowRight size={12} /> : ''}
+          </div>
+          {label}
+        </div>
+
+        {open && (
+          <div className="">
+            {childs.map((item, index) => (
+              <TreeViewItem key={index} node={item} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

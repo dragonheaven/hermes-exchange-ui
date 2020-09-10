@@ -18,7 +18,7 @@ class MarketTrades extends Component {
     const whiteStyle = { color: 'white' };
 
     return (
-      <div className="tz-exchange__inner flex-1 d-flex flex-column ml-1">
+      <div className="tz-exchange__inner flex-1 d-flex flex-column mt-1">
         <div className="tz-exchange__inner__header px-3">Market trades</div>
 
         <div className="flex-1">
