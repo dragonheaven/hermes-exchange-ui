@@ -1,0 +1,232 @@
+.tz-mobile-exchange {
+  width: 100%;
+  height: calc(100vh - 42px);
+  margin-top: 40px;
+  background-color: var(--clr-dark);
+  font-size: 0.875rem;
+  position: absolute;
+
+  .top-part {
+    background-color: #050c12;
+    border-bottom: 1px solid #20272d;
+
+    &-node {
+      font-weight: 600;
+      padding: 20px;
+      text-align: center;
+
+      .amount {
+        color: white;
+        letter-spacing: 1px;
+        font-size: 14px;
+
+        &.pink {
+          color: #ac6559;
+        }
+      }
+      .label {
+        color: #44494f;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &-trade {
+    background-color: #101e27;
+    .get-started {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #20272d;
+
+      height: 185px;
+
+      span {
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #0381fa;
+        border-radius: 0;
+        width: 80%;
+      }
+    }
+    .order-form {
+      &-header {
+        padding: 10px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #515c63;
+        border-bottom: 1px solid #20272d;
+      }
+      &-content {
+        padding: 20px 30px;
+
+        .switch {
+          background-color: #16242f;
+          color: #303e49;
+          font-weight: 600;
+
+          &-node {
+            padding: 5px 10px;
+            text-align: center;
+          }
+          .active {
+            color: #46645d;
+            background-color: #16482f;
+          }
+        }
+        .tabs {
+          .tab {
+            color: #36444f;
+            padding: 5px 10px;
+            border-bottom: 1px solid #404e57;
+            text-align: center;
+            font-weight: 600;
+
+            span {
+              text-transform: uppercase;
+            }
+
+            &.active {
+              color: #58666f;
+              border-bottom: 2px solid white;
+            }
+          }
+        }
+        .amount-group {
+          label {
+            color: #829096;
+          }
+          .input-wrapper {
+            color: #6e7882;
+            font-weight: 600;
+          }
+
+          input {
+            border: 0;
+            background-color: #243642;
+            flex-grow: 1;
+            text-align: right;
+            padding: 10px;
+            color: #6e7882;
+            font-weight: 600;
+
+            &:focus {
+              outline: none !important;
+            }
+          }
+          span {
+            background-color: #243642;
+            margin-left: 1px;
+            padding: 10px 20px;
+          }
+        }
+        .total-group {
+          border-top: 2px solid #27353e;
+          padding: 20px 0;
+          td {
+            color: #53616a;
+            padding: 0;
+          }
+        }
+        .action-group {
+          button {
+            width: 100%;
+            background: #48505b;
+            box-shadow: none;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            padding: 10px;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-orders {
+    background-color: #070f15;
+    .title-wrapper {
+      background-color: #101e27;
+      border-bottom: 2px solid #242b35;
+      padding: 15px 30px;
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .table-wrapper {
+      thead {
+        background-color: #101e27;
+        border-bottom: 2px solid #242b35;
+
+        th {
+          color: #626e78;
+          font-size: 14px;
+          text-transform: none;
+          border: 0;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+    }
+    .empty-message {
+      color: #444a4e;
+      text-align: center;
+    }
+  }
+  &-charts {
+    background-color: #070f15;
+    .title-wrapper {
+      background-color: #101e27;
+      border-bottom: 2px solid #242b35;
+      padding: 15px 30px;
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  &-book {
+    background-color: #070f15;
+    .title-wrapper {
+      background-color: #101e27;
+      border-bottom: 2px solid #242b35;
+      padding: 15px 30px;
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  &-content {
+    height: calc(100vh - 80px);
+    overflow: auto;
+  }
+
+  &-tabs {
+    height: 40px;
+
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #070e14;
+      color: #5a6167;
+      border: 1px solid #112228;
+      border-bottom: none;
+
+      &.active {
+        color: white;
+        border-bottom: 2px solid #1c79df;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}

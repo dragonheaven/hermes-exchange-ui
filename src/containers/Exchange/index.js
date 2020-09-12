@@ -15,10 +15,10 @@ class Exchange extends Component {
   render() {
     return (
       <div className="tz-exchange d-flex p-1">
-        <div className="tz-exchange__inner flex-3 d-flex flex-column mr-1">
+        <div className="tz-exchange__inner flex-2 d-flex flex-column mr-1">
           <TreeView />
         </div>
-        <div className="flex-8 d-flex flex-column">
+        <div className="flex-10 d-flex flex-column">
           <div className="tz-exchange__inner flex-2">
             <TVChartContainer />
           </div>
@@ -32,7 +32,7 @@ class Exchange extends Component {
           <MarketTrades />
         </div>
 
-        <div className="flex-3 d-flex flex-column ml-1">
+        <div className="flex-2 d-flex flex-column ml-1">
           <Trade />
         </div>
       </div>

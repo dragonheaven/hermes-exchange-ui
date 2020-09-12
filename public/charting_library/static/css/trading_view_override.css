@@ -9,19 +9,19 @@
 }
 
 .chart-page .chart-container {
-  border-color: #8591D5 !important;
+  border-color: #808185 !important;
 }
 
 /* Tooltip buttons, controls */
 .apply-common-tooltip {
   background: transparent !important;
-  border-color: #8591D5 !important;
-  color: #8591D5 !important;
+  border-color: #808185 !important;
+  color: #808185 !important;
   cursor: pointer !important;
 }
 
 .apply-common-tooltip svg {
-  fill: #8591D5 !important;
+  fill: #808185 !important;
 }
 
 .apply-common-tooltip:hover,
@@ -71,11 +71,11 @@
 /*}*/
 
 /*.layout__area--left {*/
-/*border-right: 1px solid #8591D5 !important;*/
+/*border-right: 1px solid #808185 !important;*/
 /*}*/
 
 .layout__area--left div[class^="inner"] {
-  background-color: #8591D5 !important;
+  background-color: #808185 !important;
 }
 
 .layout__area--left div[class^="toggleButton"] {

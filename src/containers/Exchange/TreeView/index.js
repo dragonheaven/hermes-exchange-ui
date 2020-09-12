@@ -7,7 +7,6 @@ function TreeView() {
   const [open, setOpen] = useState(true);
   const { childs, label } = treeData;
 
-  console.log('childs:', childs);
   return (
     <div className="tz-exchange__inner flex-1 d-flex flex-column">
       <div className="tree-view">

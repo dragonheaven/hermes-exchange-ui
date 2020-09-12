@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import deepPurple from '@material-ui/core/colors/deepPurple';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { isMobile, isBrowser } from 'react-device-detect';
 
 const $ = window.$;
 
@@ -53,7 +54,7 @@ class Header extends Component {
     e.preventDefault();
 
     this.props.signOut(this.props.token).then(() => {
-      this.props.redirectToHome();
+      // this.props.redirectToHome();
     });
   };
 
@@ -109,10 +110,19 @@ class Header extends Component {
     );
   };
 
-  render() {
-    const headerClass = 'site_header site_header_internal';
+  renderMobileHeader = () => {
+    return (
+      <nav>
+        <div className="px-2" />
+      </nav>
+    );
+  };
 
-    return <header className={headerClass}>{this.renderInternalHeader()}</header>;
+  render() {
+    if (isMobile) {
+      return <header className="site_header site_header_mobile">{this.renderMobileHeader()}</header>;
+    }
+    return <header className="site_header site_header_internal">{this.renderInternalHeader()}</header>;
   }
 }
 
