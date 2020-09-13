@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { isMobile } from 'react-device-detect';
 
 import { widget } from '../../charting_library/charting_library.min';
 import { getLanguageFromURL } from '../../constant/helpers';
 import Datafeed from './api/';
 import { TV_CONFIG } from './config';
+import { TV_CONFIG as MTV_CONFIG } from './mconfig';
 
 class TVChartContainer extends Component {
   static defaultProps = {
@@ -34,6 +36,8 @@ class TVChartContainer extends Component {
   }
 
   createChart = symbol => {
+    const config = isMobile ? MTV_CONFIG : TV_CONFIG;
+
     const widgetOptions = {
       symbol,
       // BEWARE: no trailing slash is expected in feed URL
@@ -48,7 +52,7 @@ class TVChartContainer extends Component {
       user_id: 'public_user_id',
       fullscreen: this.props.fullscreen,
 
-      ...TV_CONFIG
+      ...config
     };
 
     const tvWidget = new widget(widgetOptions);
@@ -79,7 +83,7 @@ class TVChartContainer extends Component {
   }
 
   render() {
-    return <div id="tv_chart_container" className="TVChartContainer" />;
+    return <div id="tv_chart_container" className={isMobile ? `MTVChartContainer` : 'TVChartContainer'} />;
   }
 }
 

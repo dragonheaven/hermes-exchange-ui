@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Trade from '../Exchange/Trade';
-import TVChartContainer from '../../components/TVChartContainer';
 import MobileTrade from './MobileTrade';
 import MobileOpenOrders from './MobileOpenOrders';
 import MobileCharts from './MobileCharts';
@@ -12,7 +10,7 @@ class MobileExchange extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTabIndex: 3
+      activeTabIndex: 2
     };
   }
 
