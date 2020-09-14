@@ -10,7 +10,7 @@ class MobileExchange extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTabIndex: 2
+      activeTabIndex: 0
     };
   }
 
